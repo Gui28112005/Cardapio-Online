@@ -19,7 +19,7 @@ body {
 .header-bar {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 93%;
     background-color: #a0a0a0b9;
     color: #333;
     text-align: center;
@@ -376,7 +376,7 @@ body {
     padding: 5px;
     position: fixed;
     bottom: 0;
-    width: 80%;
+    width: 93%;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
