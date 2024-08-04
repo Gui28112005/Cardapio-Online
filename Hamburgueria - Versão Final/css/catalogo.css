@@ -221,8 +221,8 @@ body {
     margin-left:-15px;
     margin-top: 30px;
     margin: 50px;
-    width: 80%;
-    align-items: center;
+    width: 75%;
+    align-items: relative;
     max-width: 1350px;
     min-height: 200px;
     background-color: #fff;
