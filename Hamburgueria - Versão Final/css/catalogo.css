@@ -1,0 +1,389 @@
+/* Estilo do body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    box-sizing: border-box;
+}
+
+#porcoes, #adicionais, #hamburguers, #bebidas {
+    text-align: center;
+    font-size: 28px;
+    font-weight: medium;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Estilo da barra de cabeçalho */
+.header-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #a0a0a0b9;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar .menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.header-bar .menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-bar .menu a:hover {
+    background-color: #ff9900;
+    color: white;
+}
+
+/* Estilo da barra de rodapé */
+.footer-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a imagem central */
+.center-image {
+    text-align: center;
+    padding: 0px 0;
+}
+
+.center-image h1 {
+    font-size: 36px;
+    color: #ca0000;
+    margin: 0;
+}
+
+/* Estilo da imagem de fundo */
+.background {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 5px solid #333;
+}
+
+/* Estilo da imagem circular */
+.circular {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-top: -140px;
+    z-index: 80;
+    border: 5px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Estilo do container */
+.container {
+    padding: 15px;
+}
+
+/* Estilo do catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 17px;
+    width: calc(33.333% - 30px);
+    background-color: #fff;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+/* Imagem do produto */
+.produto img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+/* Informações do produto */
+.produto-info {
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Nome do produto */
+.produto-info h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Preço do produto */
+.produto-info .preco {
+    color: #06be00;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+/* Descrição do produto */
+.produto-info .descricao {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botões */
+.buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-adicionar, .btn-finalizar, .btn-voltar, .btn-ver-fotos {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.btn-adicionar {
+    background-color: #28a745;
+}
+
+.btn-adicionar:hover {
+    background-color: #218838;
+}
+
+.btn-finalizar {
+    background-color: #007bff;
+}
+
+.btn-finalizar:hover {
+    background-color: #0056b3;
+}
+
+.btn-voltar {
+    background-color: #dc3545;
+}
+
+.btn-voltar:hover {
+    background-color: #c82333;
+}
+
+.btn-ver-fotos {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-ver-fotos:hover {
+    background-color: #e0a800;
+}
+
+.carrinho {
+    border-top: 4px solid #000000;
+    padding: 20px;
+    margin-top: 30px;
+    margin: 50px;
+    width: 100%;
+    align-items: center;
+    max-width: 1450px;
+    min-height: 200px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.carrinho h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.carrinho-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carrinho-lista li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.carrinho-lista li span {
+    display: inline-block;
+    width: 70%;
+}
+
+.carrinho-lista li .preco {
+    text-align: right;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.carrinho-total {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.carrinho-taxa {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Estilo do botão Remover */
+.btn-remover {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.btn-remover:hover {
+    background-color: #c82333;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+       /* Estilo para o popup de política de privacidade */
+.privacy-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    text-align: center;
+    padding: 20px;
+}
+.privacy-popup h3 {
+    margin-bottom: 15px;
+}
+.privacy-popup p {
+    margin-bottom: 15px;
+}
+.privacy-popup button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-accept {
+    background-color: #4caf50;
+    color: white;
+}
+.btn-reject {
+    background-color: #f44336;
+    color: white;
+}
+.privacy-link {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Media Queries */
+@media (max-width: 780px) {
+    .produto {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        width: calc(100% - 10px);
+    }
+}
+.footer {
+    background-color: #f8f9fa; /* cor de fundo do footer */
+    color: #333; /* cor do texto do footer */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #007bff; /* cor do link no footer */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
