@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
         // Cria a mensagem para o WhatsApp
         var mensagem = 'Pedido:\n' + itens.join('\n') + '\nTotal: ' + total + '\n\nObrigado por comprar conosco!';
-        var numeroWhatsApp = '16994392545'; // Número do WhatsApp
+        var numeroWhatsApp = '1699439254'; // Número do WhatsApp
         var urlWhatsApp = 'https://api.whatsapp.com/send?phone=' + numeroWhatsApp + '&text=' + encodeURIComponent(mensagem);
     
         // Abre o WhatsApp com a mensagem
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem("privacyAccepted", true);
 
             // Redireciona para o link web
-            window.location.href = "https://www.exemplo.com/politica-de-privacidade";
+            window.location.href = "https://politicadeprivacidadecardapioonline.vercel.app/";
         });
 
         // Evento ao clicar em rejeitar (opcional)
