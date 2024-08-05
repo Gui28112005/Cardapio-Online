@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnFinalizar = document.querySelector('.btn-finalizar');
     btnFinalizar.addEventListener('click', function() {
         const mensagem = `Seu pedido foi realizado com sucesso! Total: R$ ${total.toFixed(2)}`;
-        const telefone = 'seu_numero_de_whatsapp'; // Substitua pelo seu número de WhatsApp
+        const telefone = '16994392545'; // Substitua pelo seu número de WhatsApp
         const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${encodeURIComponent(mensagem)}`;
         window.open(url, '_blank');
     });
