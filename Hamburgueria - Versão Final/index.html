@@ -63,7 +63,7 @@
         <div id="cardapio">
             <h2>Lanches</h2>
             
-                       <div id="hamburgueres">
+            <div id="hamburgueres">
                 <div class="catalogo">
                     <div class="produto" data-nome="Devastador Burguer" data-preco="35.00">
                         <img src="img/download (1).jpg" alt="Hamburguer Especial">
@@ -161,11 +161,9 @@
                             <p class="preco">R$ 5,00</p>
                             <div class="quantidade">Quantidade: <input type="number" min="1" max="10" value="1"></div>
                             <div class="tamanho">
-                                <label for="tamanho-lanche">Escolha o tamanho:</label>
+                                <label for="tamanho-lanche"></label>
                                 <select id="tamanho-lanche" name="tamanho-lanche">
-                                    <option value="pequeno">Garrafa 600</option>
-                                    <option value="medio">Garrafa 1 L</option>
-                                    <option value="grande">Garrafa 2 L</option>
+                                    <option value="Produto Disponível">Produto Disponível</option>
                                 </select>
                             </div>
                             <p class="descricao">
@@ -186,12 +184,10 @@
                         <div class="produto-info">
                             <h2>Coca Lata 350 ml</h2>
                             <p class="preco">R$ 5,00</p>
-                            <div class="tamanho">
-                                <label for="tamanho-lanche">Escolha o tamanho:</label>
+                            <div class="">
+                                <label for="tamanho-lanche"></label>
                                 <select id="tamanho-lanche" name="tamanho-lanche">
-                                    <option value="pequeno">Garrafa 600</option>
-                                    <option value="medio">Garrafa 1 L</option>
-                                    <option value="grande">Garrafa 2 L</option>
+                                    <option value="Produto Disponívels">Produto Disponível</option>
                                 </select>
                             </div>
                             <div class="quantidade">Quantidade: <input type="number" min="1" max="10" value="1"></div>
@@ -214,13 +210,11 @@
                         <div class="produto-info">
                             <h2>Alface adicional</h2>
                             <p class="preco">R$ 4,00</p>
-                            <div class="quantidade">Quantidade: <input type="number" min="1" max="1" value="1"></div>
+                            <div class="quantidade">Quantidade: <input type="number" min="1" max="10" value="1"></div>
                             <div class="tamanho">
-                                <label for="tamanho-lanche">Escolha o tamanho:</label>
+                                <label for="tamanho-lanche"></label>
                                 <select id="tamanho-lanche" name="tamanho-lanche">
-                                    <option value="pequeno">Alface Maior</option>
-                                    <option value="medio">Alface Médio</option>
-                                    <option value="grande">Alface pequeno</option>
+                                    <option value="Produto Disponível">Produto Disponível</option>
                                 </select>
                             </div>
                             <p class="descricao">
@@ -242,12 +236,12 @@
                             <h2>Catupiry</h2>
                             <p class="preco">R$ 8,00</p>
                             <div class="tamanho">
-                                <label for="tamanho-lanche">Escolha a marca:</label>
+                                <label for="tamanho-lanche"></label>
                                 <select id="tamanho-lanche" name="tamanho-lanche">
-                                    <option value="pequeno">Catupiry Adicional</option>
+                                    <option value="Produto Disponível">Produto Disponível</option>
                                 </select>
                             </div>
-                            <div class="quantidade">Quantidade: <input type="number" min="1" max="1" value="1"></div>
+                            <div class="quantidade">Quantidade: <input type="number" min="1" max="10" value="1"></div>
                             <p class="descricao">
                                 Coca Lata 350 ml , um refrigerante refrescante e popular, ideal para acompanhar suas refeições e eventos.
                             </p>
@@ -257,7 +251,8 @@
                         </div>
                     </div>
                 </div>
-            </div   
+            </div>
+    
 
             <div class="carrinho">
                 <h2>Carrinho de Compras</h2>
@@ -278,16 +273,21 @@
         </div>
  <!-- Footer -->
  <div class="footer">
-    <p> Estamos de acordo com a nossa <a href="privacidade.html">Política de Privacidade</a></p>
+    <p>© 2024 Lanche.com - Todos os direitos reservados. <a href="privacidade.html">Política de Privacidade</a></p>
 </div>
+        <div class="privacy-popup">
+            <h3>Política de Privacidade</h3>
+            <p>Nós utilizamos cookies para garantir a melhor experiência em nosso site. Ao clicar em "Aceitar", você concorda com o uso de cookies. Para mais informações, consulte nossa <span class="privacy-link">Política de Privacidade</span>.</p>
+            <button class="btn-accept">Aceitar</button>
+            <button class="btn-reject">Rejeitar</button>
+        </div>
 
 <!-- Popup de política de privacidade -->
 <div class="overlay" id="overlay"></div>
 <div class="privacy-popup" id="privacy-popup">
     <h3>Política de Privacidade</h3>
-    <p>Esta política de privacidade descreve como coletamos, usamos e protegemos suas informações pessoais.Política de Privacidade</a>e, ao continuar navegando, 
-        você concorda com estas condições.</p>
-    <p>Para mais detalhes, leia nossa <a href="https://politicadeprivacidadecardapioonline.vercel.app/" class="privacy-link" target="_blank">Política de Privacidade Completa</a>.</p>
+    <p>Esta política de privacidade descreve como coletamos, usamos e protegemos suas informações pessoais.</p>
+    <p>Para mais detalhes, leia nossa <a href="política-de-privacidade.html" class="privacy-link" target="_blank">Política de Privacidade Completa</a>.</p>
     <button class="btn-accept" id="accept-btn">Aceitar</button>
 
 
