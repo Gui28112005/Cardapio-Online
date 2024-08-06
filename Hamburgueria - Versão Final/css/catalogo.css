@@ -40,9 +40,9 @@ body {
 .header-bar .menu a {
     color: #333;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 7px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -172,7 +172,7 @@ body {
 
 .btn-adicionar, .btn-finalizar, .btn-voltar, .btn-ver-fotos {
     padding: 10px 20px;
-    margin: 10px;
+    margin: 18px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -217,13 +217,12 @@ body {
 
 .carrinho {
     border-top: 4px solid #000000;
-    padding: 12px;
-    margin-left:-15px;
-    margin-top: 30px;
+    padding: 1sss0px;
+    margin-top: 20px;
     margin: 50px;
-    width: 75%;
-    align-items: relative;
-    max-width: 1350px;
+    width: 100%;
+    align-items: center;
+    max-width: 1450px;
     min-height: 200px;
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -373,9 +372,10 @@ body {
     background-color: #f8f9fa; /* cor de fundo do footer */
     color: #333; /* cor do texto do footer */
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     position: fixed;
     bottom: 0;
+    margin: 13px;
     width: 100%;
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
