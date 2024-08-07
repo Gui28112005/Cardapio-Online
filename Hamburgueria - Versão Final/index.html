@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
     <div id="carouselExampleIndicators" class="carousel slide center-image" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -18,7 +19,7 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/HamburguerAlcatraComBacon_1-scaled.jpg" class="d-block w-100" alt="Imagem 1">
+                <img src="img/hamburguer-caseiro-topo.jpg" class="d-block w-100" alt="Imagem 1">
             </div>
             <div class="carousel-item">
                 <img src="img/hamburguer-caseiro-topo.jpg" class="d-block w-100" alt="Imagem 2">
@@ -170,20 +171,20 @@
 
             <div id="refrigerantes">
                 <div class="catalogo">
-                    <div class="produto" data-nome="Coca Lata 350 ml" data-preco="5.00">
-                        <img src="img/coca_350ml_800x.webp" alt="Coca Lata 350 ml">
+                    <div class="produto" data-nome="Coca-Cola" data-preco="5.00">
+                        <img src="img/coca_350ml_800x.webp" alt="Coca-Cola 2L">
                         <div class="produto-info">
-                            <h2>Coca Lata 350 ml</h2>
+                            <h2>Antartica Lata 350 ml</h2>
                             <p class="preco">R$ 5,00</p>
-                            <div class="">
+                            <div class="quantidade">Quantidade: <input type="number" min="1" max="10" value="1"></div>
+                            <div class="tamanho">
                                 <label for="tamanho-lanche"></label>
                                 <select id="tamanho-lanche" name="tamanho-lanche">
-                                    <option value="Produto Disponívels">Produto Disponível</option>
+                                    <option value="Produto Disponível">Produto Disponível</option>
                                 </select>
                             </div>
-                            <div class="quantidade">Quantidade: <input type="number" min="1" max="10" value="1"></div>
                             <p class="descricao">
-                                Coca Lata 350 ml , um refrigerante refrescante e popular, ideal para acompanhar suas refeições e eventos.
+                                A clássica Coca-Cola em garrafa de 2 litros, perfeita para acompanhar suas refeições e festas.
                             </p>
                             <div class="buttons">
                                 <button class="btn-adicionar">Adicionar ao Carrinho</button>
@@ -257,15 +258,17 @@
             </div>
         </div>
 
+         <!-- Footer -->
+ <div class="total">
+    <p>Esta política de privacidade descreve como coletamos, usamos e protegemos suas informações pessoais, Para Mais informações leia nossa <a href="privacidade.html">Política de Privacidade.</a></p>
+</div>
+
             <!-- Popup de confirmação -->
             <div id="popup" class="popup">
                 <p>Produto adicionado ao carrinho!</p>
             </div>
         </div>
- <!-- Footer -->
- <div class="footer">
-    <p>© 2024 Lanche.com - Todos os direitos reservados. <a href="privacidade.html">Política de Privacidade</a></p>
-</div>
+
         <div class="privacy-popup">
             <h3>Política de Privacidade</h3>
             <p>Nós utilizamos cookies para garantir a melhor experiência em nosso site. Ao clicar em "Aceitar", você concorda com o uso de cookies. Para mais informações, consulte nossa <span class="privacy-link">Política de Privacidade</span>.</p>
