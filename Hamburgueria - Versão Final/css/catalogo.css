@@ -217,10 +217,10 @@ body {
 
 .carrinho {
     border-top: 4px solid #000000;
-    padding: 12px;
+    padding: 10px;
     margin-top: 20px;
     margin: 50px;
-    width: 100%;
+    width: 80%;
     align-items: center;
     max-width: 1450px;
     min-height: 200px;
