@@ -52,7 +52,6 @@ body {
     color: white;
 }
 
-/* Estilo da barra de rodapé */
 .footer-bar {
     position: fixed;
     bottom: 0;
@@ -60,10 +59,12 @@ body {
     background-color: #000000;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin-top: 50%;
     z-index: 1000;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Estilo para a imagem central */
 .center-image {
@@ -217,7 +218,7 @@ body {
 
 .carrinho {
     border-top: 4px solid #000000;
-    padding: 10px;
+    padding: 7px;
     margin-top: 20px;
     margin: 50px;
     width: 80%;
@@ -301,12 +302,12 @@ body {
 .popup {
     display: none;
     position: fixed;
-    top: 170px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #4caf50;
     color: white;
-    padding: 10px 30px;
+    padding: 10px 20px;
     border-radius: 5px;
     z-index: 1000;
 }
