@@ -1,18 +1,20 @@
 /* Estilo do body */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
     box-sizing: border-box;
+    background-color: #f4f4f4; /* cor de fundo mais suave */
 }
 
+/* Estilo das seções */
 #porcoes, #adicionais, #hamburguers, #bebidas {
     text-align: center;
     font-size: 28px;
-    font-weight: medium;
+    font-weight: 600; /* Alterado para um peso mais forte */
     color: #333;
-    margin: 20px 0;
+    margin: 30px 0; /* Mais espaço entre as seções */
 }
 
 /* Estilo da barra de cabeçalho */
@@ -20,18 +22,18 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #a0a0a0b9;
+    background-color: rgba(160, 160, 160, 0.8); /* Mais transparente */
     color: #333;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0; /* Maior espaço interno */
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
 }
 
 .header-bar .menu {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -40,31 +42,31 @@ body {
 .header-bar .menu a {
     color: #333;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px; /* Aumentado para melhor legibilidade */
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 12px 20px; /* Aumentado para botões maiores */
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 .header-bar .menu a:hover {
     background-color: #ff9900;
     color: white;
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
 }
 
+/* Estilo da barra de rodapé */
 .footer-bar {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    background-color: #000000;
+    width: calc(100% - 26px); /* Mais espaço nas bordas */
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50%;
     z-index: 1000;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Estilo para a imagem central */
 .center-image {
@@ -89,36 +91,37 @@ body {
 /* Estilo da imagem circular */
 .circular {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 220px; /* Aumentado para um visual mais impactante */
+    height: 220px;
     border-radius: 50%;
-    margin-top: -140px;
+    margin-top: 50px; /* Ajustado para melhor centralização */
     z-index: 80;
     border: 5px solid #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
     overflow: hidden;
 }
 
 /* Estilo do container */
 .container {
-    padding: 15px;
+    padding: 20px; /* Aumentado para mais espaço */
 }
 
 /* Estilo do catálogo */
 .catalogo {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px; /* Aumentado para mais espaçamento */
     justify-content: center;
 }
 
 .produto {
     position: relative;
-    border: 1px solid #ddd;
-    border-radius: 17px;
-    width: calc(33.333% - 30px);
+    border: 1px solid #000000;
+    border-radius: 20px; /* Cantos mais arredondados */
+    width: calc(33.333% - 40px);
+    top: 20px;
     background-color: #fff;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
     margin-bottom: 30px;
@@ -128,24 +131,26 @@ body {
 .produto img {
     width: 100%;
     height: 250px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 15px; /* Arredondamento mais suave */
+    border-top-right-radius: 15px;
     object-fit: cover;
+    position: relative;
+    border: 1px solid #8a8a8a;
 }
 
 /* Informações do produto */
 .produto-info {
     text-align: center;
-    padding: 15px;
+    padding: 20px; /* Aumentado para mais espaço */
     background-color: #f9f9f9;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-top: 1px solid #ddd;
 }
 
 /* Nome do produto */
 .produto-info h2 {
-    font-size: 20px;
+    font-size: 22px; /* Aumentado para melhor legibilidade */
     margin: 10px 0;
     color: #333;
 }
@@ -155,13 +160,13 @@ body {
     color: #06be00;
     font-weight: bold;
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 26px; /* Aumentado para chamar atenção */
 }
 
 /* Descrição do produto */
 .produto-info .descricao {
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 15px; /* Aumentado para melhor legibilidade */
     color: #555;
 }
 
@@ -172,12 +177,12 @@ body {
 }
 
 .btn-adicionar, .btn-finalizar, .btn-voltar, .btn-ver-fotos {
-    padding: 10px 20px;
+    padding: 12px 25px; /* Aumentado para botões mais confortáveis */
     margin: 18px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px; /* Aumentado para melhor legibilidade */
     font-weight: bold;
     transition: all 0.3s ease;
     color: white;
@@ -193,6 +198,7 @@ body {
 
 .btn-finalizar {
     background-color: #007bff;
+    border-radius: 70px;
 }
 
 .btn-finalizar:hover {
@@ -216,29 +222,29 @@ body {
     background-color: #e0a800;
 }
 
+/* Estilo do carrinho */
 .carrinho {
-    border-top: 4px solid #000000;
-    padding: 7px;
-    margin-top: 20px;
-    margin: 50px;
-    width: 80%;
-    align-items: center;
+    border-top: 5px solid #000;
+    padding: 10px;
+    margin: 50px auto; /* Centralizar o carrinho */
+    width: 90%; /* Ajustado para melhor responsividade */
     max-width: 1450px;
     min-height: 200px;
     background-color: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
     overflow-y: auto;
     box-sizing: border-box;
 }
 
 .carrinho h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 28px; /* Aumentado para melhor legibilidade */
     margin-bottom: 15px;
     color: #333;
 }
 
+/* Lista do carrinho */
 .carrinho-lista {
     list-style: none;
     padding: 0;
@@ -263,11 +269,18 @@ body {
     color: #e67e22;
 }
 
+.preco1 {
+    text-align: right;
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 30;
+}
+
 .carrinho-total {
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 24px; /* Aumentado para destaque */
     color: #333;
 }
 
@@ -283,7 +296,7 @@ body {
 .btn-remover {
     background-color: #dc3545;
     color: white;
-    padding: 8px 16px;
+    padding: 10px 20px; /* Aumentado para conforto */
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -299,6 +312,7 @@ body {
     background-color: #c82333;
 }
 
+/* Popup */
 .popup {
     display: none;
     position: fixed;
@@ -307,85 +321,155 @@ body {
     transform: translateX(-50%);
     background-color: #4caf50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px; /* Aumentado para mais conforto */
     border-radius: 5px;
     z-index: 1000;
 }
-       /* Estilo para o popup de política de privacidade */
+
+/* Estilo para o popup de política de privacidade */
 .privacy-popup {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 90%; /* Aumentado para melhorar responsividade */
     max-width: 400px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     z-index: 2000;
     text-align: center;
-    padding: 20px;
+    padding: 25px; /* Aumentado para mais espaço */
 }
+
 .privacy-popup h3 {
     margin-bottom: 15px;
 }
+
 .privacy-popup p {
     margin-bottom: 15px;
 }
+
 .privacy-popup button {
     margin: 5px;
-    padding: 10px 20px;
+    padding: 12px 22px; /* Aumentado para conforto */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .btn-accept {
     background-color: #4caf50;
     color: white;
 }
+
 .btn-reject {
     background-color: #f44336;
     color: white;
 }
+
 .privacy-link {
     color: #007bff;
     text-decoration: underline;
     cursor: pointer;
 }
 
-
 /* Media Queries */
 @media (max-width: 780px) {
     .produto {
-        width: calc(50% - 10px);
+        width: calc(50% - 20px); /* Ajuste para telas menores */
     }
 }
 
 @media (max-width: 480px) {
     .produto {
-        width: calc(100% - 10px);
+        width: calc(100% - 20px); /* Ajuste para telas menores */
     }
 }
-.footer {
-    background-color: #f8f9fa; /* cor de fundo do footer */
-    color: #333; /* cor do texto do footer */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    margin: 13px;
-    width: 100%;
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+/* Estilo dos títulos */
+h1, h2, h3 {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #333;
+    margin: 0; /* Remove margens padrão para melhor controle */
+    text-align: center; /* Centraliza os títulos */
+    font-weight: 700; /* Aumenta o peso da fonte para destaque */
+    text-transform: capitalize; /* Capitaliza as primeiras letras */
+    margin-top: 40px;
 }
 
-.footer a {
-    color: #007bff; /* cor do link no footer */
-    text-decoration: none;
+/* Títulos específicos */
+.center-image h1 {
+    font-size: 40px; /* Aumentado para maior destaque */
+    color: #ca0000; /* Cor vibrante para o título principal */
+    margin: 20px 0; /* Espaço em volta do título */
 }
 
-.footer a:hover {
-    text-decoration: underline;
+.produto-info h2 {
+    font-size: 24px; /* Aumentado para os títulos dos produtos */
+    color: #333; /* Cor consistente */
+    margin: 10px 0;
 }
+
+        /* Estilo do footer */
+        .footer {
+            background-color: #343a40; /* Fundo escuro */
+            color: #ffffff; /* Texto branco */
+            text-align: center;
+            padding: 20px; /* Aumentado para mais conforto */
+            position: relative; /* Alterado para não fixar na parte inferior */
+            margin-top: 30px; /* Espaço acima do footer */
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        .footer a {
+            color: #ffc107; /* Cor de link dourada */
+            text-decoration: none; /* Remove sublinhado padrão */
+            font-weight: bold; /* Destaca os links */
+        }
+
+        .footer a:hover {
+            text-decoration: underline; /* Sublinha ao passar o mouse */
+        }
+
+        .footer p {
+            margin: 0; /* Remove margens padrão */
+            font-size: 14px; /* Tamanho da fonte */
+            color: #d3d3d3; /* Cor cinza claro para diferenciação */
+        }
+/* Estilo para os subtítulos */
+h3 {
+    font-size: 28px; /* Tamanho aumentado para maior destaque */
+    color: #333; /* Cor do texto */
+    margin: 50px 10; /* Espaçamento em cima e embaixo */
+    text-transform: uppercase; /* Letras maiúsculas para um visual mais forte */
+    border-bottom: 2px solid #ff9900; /* Linha abaixo para separação */
+    padding-bottom: 10px; /* Espaçamento interno */
+margin-top: 80px;
+}
+
+
+
+
+/* Nome do produto */
+.produto-info h2 {
+    font-size: 20px; /* Tamanho do título do produto */
+    color: #333; /* Cor do texto */
+    margin: 10px 0; /* Espaçamento */
+}
+
+/* Preço do produto */
+.produto-info .preco {
+    color: #06be00; /* Verde para destacar o preço */
+    font-weight: bold; /* Destaca o preço */
+    margin: 10px 0; /* Espaçamento */
+}
+
+
+/* Botões */
+.buttons {
+    margin-top: 10px; /* Espaçamento acima dos botões */
+}
+
